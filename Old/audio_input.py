@@ -25,7 +25,7 @@ for i in range(0, int(fs / chunk * seconds)):
     data = stream.read(chunk)
     frames.append(data)
 
-# Stop and close the stream 
+# Stop and close the stream
 stream.stop_stream()
 stream.close()
 # Terminate the PortAudio interface
